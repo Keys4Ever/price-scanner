@@ -90,7 +90,7 @@ async function checkStock() {
         checksSinCambios += 1;
         console.log("Sin cambios", new Date().toLocaleTimeString());
         if (checksSinCambios >= 6) {
-          await notifyDiscord("⏳ Sin cambios (última hora) @everyone\n" + URL);
+          await notifyDiscord("⏳ Sin cambios (última hora)\n" + URL);
           checksSinCambios = 0;
         }
       }
