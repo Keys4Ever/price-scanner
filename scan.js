@@ -18,7 +18,6 @@ async function checkStock() {
     if (lastStock === null) {
       lastStock = inStock;
       console.log("Estado inicial:", inStock);
-      return;
     }
 
     if (inStock !== lastStock) {
